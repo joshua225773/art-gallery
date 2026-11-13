@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Girl with a Pearl Earring (1665) - Johannes Vermeer | Lumière Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-title">Lumière</span>
+        <span class="brand-tagline">Fine Art Gallery</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="artworks.html" class="nav-link active">Artworks & Exhibition</a>
+        <a href="about.html" class="nav-link">About & Visit</a>
+        <div class="nav-auth-group">
+          <a href="login.html" class="btn btn-outline btn-sm">Sign In</a>
+          <a href="signup.html" class="btn btn-primary btn-sm">Join Gallery</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- Breadcrumb Navigation -->
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>&rsaquo;</span>
+        <a href="artworks.html">Artworks</a>
+        <span>&rsaquo;</span>
+        <span style="color: var(--dark); font-weight: 600;">Girl with a Pearl Earring</span>
+      </nav>
+
+      <!-- Primary Artwork Detail Layout -->
+      <section class="artwork-detail-section">
+        <div class="artwork-detail-grid">
+          
+          <!-- Visual Column: Picture in museum frame -->
+          <div class="artwork-visual-column">
+            <div class="museum-frame">
+              <div class="museum-frame-inner">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/1200px-1665_Girl_with_a_Pearl_Earring.jpg" 
+                     alt="Girl with a Pearl Earring by Johannes Vermeer" 
+                     class="zoomable-image" 
+                     title="Click to examine full-resolution view">
+              </div>
+            </div>
+
+            <!-- Interactive Toolbar below image -->
+            <div class="artwork-toolbar">
+              <div class="action-btn-group">
+                <button type="button" id="likeArtworkBtn" class="icon-btn">
+                  &#9829; <span>Add to Favorites</span> (<strong id="likeCount">418</strong>)
+                </button>
+                <button type="button" class="icon-btn" onclick="document.querySelector('.zoomable-image').click()">
+                  &#128269; <span>Zoom In</span>
+                </button>
+              </div>
+              <span style="font-size: 0.78rem; color: var(--text-muted);">Mauritshuis, The Hague</span>
+            </div>
+          </div>
+
+          <!-- Information Column: Details & Description -->
+          <div class="artwork-info-column">
+            <span class="art-meta-tag">Dutch Golden Age</span>
+            <h1 class="artwork-detail-title">Girl with a Pearl Earring</h1>
+            <p class="artwork-detail-artist">By <strong>Johannes Vermeer</strong> (Dutch, 1632–1675)</p>
+            <p class="artwork-detail-year">Year of Creation: <strong>c. 1665</strong></p>
+
+            <!-- Specifications Table -->
+            <table class="artwork-spec-table">
+              <tbody>
+                <tr>
+                  <th>Medium</th>
+                  <td>Oil on canvas</td>
+                </tr>
+                <tr>
+                  <th>Dimensions</th>
+                  <td>44.5 cm &times; 39 cm (17.5 in &times; 15 in)</td>
+                </tr>
+                <tr>
+                  <th>Current Collection</th>
+                  <td>Mauritshuis Museum, The Hague, Netherlands</td>
+                </tr>
+                <tr>
+                  <th>Genre</th>
+                  <td>Tronie (character study of an anonymous figure in exotic costume)</td>
+                </tr>
+                <tr>
+                  <th>Key Pigment</th>
+                  <td>Costly natural ultramarine (crushed lapis lazuli)</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Audio Commentary Simulation -->
+            <div class="audio-guide-card">
+              <div class="audio-guide-info">
+                <h4>Audio Curator Tour</h4>
+                <p id="audioGuideStatus">Narrated curatorial commentary (approx. 2 min)</p>
+              </div>
+              <button type="button" id="audioGuideBtn" class="btn btn-primary btn-sm">
+                Listen to Audio Commentary
+              </button>
+            </div>
+
+            <!-- Curatorial Short Description -->
+            <div class="artwork-description-box">
+              <h3>Curator's Description</h3>
+              <p>
+                Often referred to affectionately as "The Mona Lisa of the North", Johannes Vermeer's <em>Girl with a Pearl Earring</em> is not a standard formal commissioned portrait, but a <em>tronie</em>—a seventeenth-century Dutch study of an anonymous face expressing a captivating character or exotic disguise.
+              </p>
+              <p>
+                The young girl is depicted against a deep, dark glaze background that pushes her radiant features forward into dramatic intimacy. She turns over her shoulder to gaze directly at the observer with large wide eyes and lips parted slightly as if about to speak. She wears an oriental turban combining expensive lapis lazuli ultramarine with mustard yellow drapery.
+              </p>
+              <p>
+                The focal point of the composition is the enormous droplet pearl earring dangling beside her neck. With astonishing economy of brushwork, Vermeer captured the lustrous pearl with merely two quick strokes of lead white paint: a bright crescent highlight at the top reflecting the studio window, and a softer gleam along the underside catching the glow of her white collar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Similar Artworks in Same Category Section -->
+      <section class="similar-artworks-section">
+        <div class="section-header" style="text-align: left; margin-bottom: 1.5rem;">
+          <span class="section-tag">Related Collection</span>
+          <h2 class="section-title" style="font-size: 1.8rem;">Similar Artworks in the Dutch Golden Age</h2>
+          <p class="section-subtitle">Discover peer masterpieces highlighting northern naturalism, dramatic chiaroscuro, and exquisite domestic light.</p>
+        </div>
+
+        <div class="similar-grid">
+          <!-- Similar Piece 1 -->
+          <article class="similar-card">
+            <div class="similar-card-img">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/The_Night_Watch_-_HD.jpg/1280px-The_Night_Watch_-_HD.jpg" 
+                   alt="The Night Watch by Rembrandt" loading="lazy">
+            </div>
+            <div class="similar-card-content">
+              <h3 class="similar-card-title">The Night Watch</h3>
+              <p class="similar-card-artist">Rembrandt van Rijn</p>
+              <span class="similar-card-year">1642 &bull; Dutch Golden Age</span>
+              <p style="font-size: 0.83rem; color: #555; margin-bottom: 0.8rem;">
+                A colossal civic guard militia portrait revolutionary for its colossal scale, dramatic light direction, and lively action.
+              </p>
+              <a href="artworks.html" class="similar-card-link">View in Collection &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Similar Piece 2 -->
+          <article class="similar-card">
+            <div class="similar-card-img">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.jpg/1200px-Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.jpg" 
+                   alt="The Milkmaid by Johannes Vermeer" loading="lazy">
+            </div>
+            <div class="similar-card-content">
+              <h3 class="similar-card-title">The Milkmaid</h3>
+              <p class="similar-card-artist">Johannes Vermeer</p>
+              <span class="similar-card-year">c. 1658 &bull; Dutch Golden Age</span>
+              <p style="font-size: 0.83rem; color: #555; margin-bottom: 0.8rem;">
+                An intimate domestic scene of a kitchen maid pouring milk, celebrated for its tactile realism and jewel-like points of light.
+              </p>
+              <a href="artworks.html" class="similar-card-link">View in Collection &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Similar Piece 3 -->
+          <article class="similar-card">
+            <div class="similar-card-img">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Johannes_Vermeer_-_The_Astronomer_-_Google_Art_Project.jpg/1200px-Johannes_Vermeer_-_The_Astronomer_-_Google_Art_Project.jpg" 
+                   alt="The Astronomer by Johannes Vermeer" loading="lazy">
+            </div>
+            <div class="similar-card-content">
+              <h3 class="similar-card-title">The Astronomer</h3>
+              <p class="similar-card-artist">Johannes Vermeer</p>
+              <span class="similar-card-year">1668 &bull; Dutch Golden Age</span>
+              <p style="font-size: 0.83rem; color: #555; margin-bottom: 0.8rem;">
+                A quiet tribute to Enlightenment inquiry showing a scholar revolving a celestial globe illuminated by soft window light.
+              </p>
+              <a href="artworks.html" class="similar-card-link">View in Collection &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Fullscreen Zoom Modal Viewer -->
+  <div id="imageModal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Image Zoom View">
+    <div class="modal-content">
+      <button type="button" id="modalCloseBtn" class="modal-close-btn" aria-label="Close image modal">&times;</button>
+      <img id="modalImageDisplay" src="" alt="Full view preview">
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Lumière Gallery</h4>
+          <p>
+            An online home for timeless fine art. We archive, document, and present high-fidelity digital records of influential human masterpieces.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="artworks.html">Art Collection</a></li>
+            <li><a href="about.html">About & Visit</a></li>
+            <li><a href="login.html">Sign In</a></li>
+            <li><a href="signup.html">Register</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h5>Exhibition Rooms</h5>
+          <ul>
+            <li><a href="the-starry-night.html">The Starry Night</a></li>
+            <li><a href="mona-lisa.html">Mona Lisa</a></li>
+            <li><a href="the-scream.html">The Scream</a></li>
+            <li><a href="girl-with-pearl-earring.html">Girl with a Pearl Earring</a></li>
+            <li><a href="the-kiss.html">The Kiss</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h5>Curatorial Credits</h5>
+          <p style="font-size: 0.85rem; color: #a6a199;">
+            Gift of Arnoldus Andries des Tombe to the Mauritshuis in 1902. High resolution image preserved in public domain.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lumière Fine Art Gallery. Curated by Joshua Antony.</p>
+        <p>Built with Semantic HTML5, Custom CSS & Vanilla JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
