@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Lumière | Fine Art Gallery Membership</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-title">Lumière</span>
+        <span class="brand-tagline">Fine Art Gallery</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="artworks.html" class="nav-link">Artworks & Exhibition</a>
+        <a href="about.html" class="nav-link">About & Visit</a>
+        <div class="nav-auth-group">
+          <a href="login.html" class="btn btn-outline btn-sm">Sign In</a>
+          <a href="signup.html" class="btn btn-primary btn-sm active">Join Gallery</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="auth-wrapper">
+      <div class="auth-card" style="max-width: 500px;">
+        <div class="auth-header">
+          <div class="auth-logo">LUMIÈRE</div>
+          <h2>Join the Circle</h2>
+          <p>Create a complimentary profile to bookmark artworks, leave reviews, and receive exhibit dispatches.</p>
+        </div>
+
+        <div id="signupAlert" class="alert-message"></div>
+
+        <form id="signupForm" novalidate>
+          <div class="form-group">
+            <label for="signupName" class="form-label">Full Name</label>
+            <input type="text" id="signupName" class="form-control" placeholder="e.g. Leonardo Gherardini" required>
+          </div>
+
+          <div class="form-group">
+            <label for="signupEmail" class="form-label">Email Address</label>
+            <input type="email" id="signupEmail" class="form-control" placeholder="name@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="signupMovement" class="form-label">Primary Art Interest</label>
+            <select id="signupMovement" class="form-control" style="cursor: pointer;">
+              <option value="Post-Impressionism">Post-Impressionism (Van Gogh, Cézanne)</option>
+              <option value="High Renaissance">High Renaissance (Da Vinci, Raphael, Michelangelo)</option>
+              <option value="Dutch Golden Age">Dutch Golden Age (Vermeer, Rembrandt)</option>
+              <option value="Expressionism">Expressionism (Munch, Schiele, Kirchner)</option>
+              <option value="Symbolism">Symbolism & Art Nouveau (Klimt, Mucha)</option>
+              <option value="All Movements">All Historical Movements</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="signupPassword" class="form-label">Password (min. 6 characters)</label>
+            <div class="input-container">
+              <input type="password" id="signupPassword" class="form-control" placeholder="Create a password" required>
+              <button type="button" class="toggle-password-btn" data-target="signupPassword">Show</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="signupConfirmPassword" class="form-label">Confirm Password</label>
+            <div class="input-container">
+              <input type="password" id="signupConfirmPassword" class="form-control" placeholder="Re-enter password" required>
+              <button type="button" class="toggle-password-btn" data-target="signupConfirmPassword">Show</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="termsCheck" required checked>
+              <span>I agree to the <a href="javascript:void(0)" onclick="alert('Lumière Gallery is committed to open art education and privacy.');">Terms of Membership</a> &amp; Privacy Policy</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Complete Registration</button>
+        </form>
+
+        <div class="auth-footer">
+          Already registered? <a href="login.html">Sign In Here</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Lumière Gallery</h4>
+          <p>
+            An online home for timeless fine art. We archive, document, and present high-fidelity digital records of influential human masterpieces.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="artworks.html">Art Collection</a></li>
+            <li><a href="about.html">About & Visit</a></li>
+            <li><a href="login.html">Sign In</a></li>
+            <li><a href="signup.html">Register</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h5>Featured Works</h5>
+          <ul>
+            <li><a href="the-starry-night.html">The Starry Night</a></li>
+            <li><a href="mona-lisa.html">Mona Lisa</a></li>
+            <li><a href="the-scream.html">The Scream</a></li>
+            <li><a href="the-kiss.html">The Kiss</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h5>Newsletter</h5>
+          <p style="font-size: 0.85rem; color: #a6a199;">
+            Join over 15,000 global art enthusiasts receiving our Sunday curatorial essays.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lumière Fine Art Gallery. Curated by Joshua Antony.</p>
+        <p>Built with Semantic HTML5, Custom CSS & Vanilla JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
