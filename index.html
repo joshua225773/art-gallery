@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumière Fine Art Gallery | Timeless Masterpieces</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-title">Lumière</span>
+        <span class="brand-tagline">Fine Art Gallery</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="artworks.html" class="nav-link">Artworks & Exhibition</a>
+        <a href="about.html" class="nav-link">About & Visit</a>
+        <div class="nav-auth-group">
+          <a href="login.html" class="btn btn-outline btn-sm">Sign In</a>
+          <a href="signup.html" class="btn btn-primary btn-sm">Join Gallery</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Banner -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <span class="hero-eyebrow">Autumn Exhibition 2026</span>
+            <h1 class="hero-title">Experience the World's <span>Greatest</span> Art Heritage</h1>
+            <p class="hero-desc">
+              Discover iconic historical masterpieces from the Renaissance, Dutch Golden Age, Impressionism, and modern movements. A curated virtual sanctuary for art lovers and scholars.
+            </p>
+            <div class="hero-actions">
+              <a href="artworks.html" class="btn btn-primary">Explore Art Collection &rarr;</a>
+              <a href="about.html" class="btn btn-outline" style="color: #ffffff; border-color: rgba(255,255,255,0.3);">Plan Your Visit</a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <h3>500+</h3>
+                <p>Archived Pieces</p>
+              </div>
+              <div class="stat-item">
+                <h3>5</h3>
+                <p>Curated Eras</p>
+              </div>
+              <div class="stat-item">
+                <h3>100%</h3>
+                <p>Free Virtual Access</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-showcase">
+            <div class="hero-frame">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" 
+                   alt="The Starry Night by Vincent van Gogh">
+              <div class="hero-frame-caption">
+                <div>
+                  <strong>The Starry Night</strong>
+                  <br>
+                  <span>Vincent van Gogh (1889)</span>
+                </div>
+                <a href="the-starry-night.html" class="btn btn-sm btn-outline">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Art Movements Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Historical Periods</span>
+          <h2 class="section-title">Explore Movements & Eras</h2>
+          <p class="section-subtitle">Navigate through centuries of artistic evolution, from Florentine masters to 20th-century emotion.</p>
+        </div>
+
+        <div class="categories-grid">
+          <a href="artworks.html?category=renaissance" class="category-card">
+            <div class="category-icon">&#9670;</div>
+            <h3>High Renaissance</h3>
+            <p>Harmony, proportion, and Leonardo da Vinci's pioneering sfumato technique.</p>
+          </a>
+
+          <a href="artworks.html?category=dutch" class="category-card">
+            <div class="category-icon">&#9733;</div>
+            <h3>Dutch Golden Age</h3>
+            <p>Vermeer and Rembrandt's atmospheric mastery of domestic light and shadows.</p>
+          </a>
+
+          <a href="artworks.html?category=impressionism" class="category-card">
+            <div class="category-icon">&#9728;</div>
+            <h3>Post-Impressionism</h3>
+            <p>Passionate brushstrokes and bold subjective color harmonies by Van Gogh.</p>
+          </a>
+
+          <a href="artworks.html?category=expressionism" class="category-card">
+            <div class="category-icon">&#10022;</div>
+            <h3>Expressionism</h3>
+            <p>Raw emotional vulnerability, anguish, and Edvard Munch's psychological depth.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Masterpieces Preview Section -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Masterpieces</span>
+          <h2 class="section-title">Iconic Artworks on Display</h2>
+          <p class="section-subtitle">Examine celebrated paintings curated with high-definition digital preservation.</p>
+        </div>
+
+        <div class="art-grid">
+          <!-- Card 1: Starry Night -->
+          <article class="art-card">
+            <div class="art-card-thumb">
+              <span class="art-badge">Post-Impressionism</span>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" 
+                   alt="The Starry Night">
+            </div>
+            <div class="art-card-body">
+              <span class="art-card-year">1889 &bull; Oil on Canvas</span>
+              <h3 class="art-card-title">The Starry Night</h3>
+              <p class="art-card-artist">Vincent van Gogh</p>
+              <p class="art-card-desc">
+                Painted from Van Gogh's asylum room in Saint-Rémy-de-Provence, capturing swirling turbulent cosmos over a tranquil cypress-framed village.
+              </p>
+              <div class="art-card-footer">
+                <a href="the-starry-night.html" class="art-link-btn">View Artwork Details &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Mona Lisa -->
+          <article class="art-card">
+            <div class="art-card-thumb">
+              <span class="art-badge">High Renaissance</span>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/1200px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" 
+                   alt="Mona Lisa">
+            </div>
+            <div class="art-card-body">
+              <span class="art-card-year">1503&ndash;1519 &bull; Oil on Poplar</span>
+              <h3 class="art-card-title">Mona Lisa</h3>
+              <p class="art-card-artist">Leonardo da Vinci</p>
+              <p class="art-card-desc">
+                The world's most enigmatic portrait, famous for Lisa Gherardini's subtle smile and Leonardo's pioneering sfumato blending technique.
+              </p>
+              <div class="art-card-footer">
+                <a href="mona-lisa.html" class="art-link-btn">View Artwork Details &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: The Scream -->
+          <article class="art-card">
+            <div class="art-card-thumb">
+              <span class="art-badge">Expressionism</span>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/1200px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg" 
+                   alt="The Scream">
+            </div>
+            <div class="art-card-body">
+              <span class="art-card-year">1893 &bull; Oil, Tempera & Pastel</span>
+              <h3 class="art-card-title">The Scream</h3>
+              <p class="art-card-artist">Edvard Munch</p>
+              <p class="art-card-desc">
+                An agonizing representation of existential dread set against an infernal Oslo fjord sky, symbol of psychological modernity.
+              </p>
+              <div class="art-card-footer">
+                <a href="the-scream.html" class="art-link-btn">View Artwork Details &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="artworks.html" class="btn btn-dark">View Entire Exhibition (9 Pieces) &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curatorial Highlight Banner -->
+    <section class="section" style="background-color: var(--primary-light);">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem;">
+          <div>
+            <span class="section-tag">Members Privilege</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 0.5rem; color: var(--dark);">
+              Become a Lumière Circle Member
+            </h3>
+            <p style="color: var(--text-muted); max-width: 580px;">
+              Create your complimentary account to bookmark your favorite historical paintings, unlock recorded curator audio guides, and receive private exhibition invitations.
+            </p>
+          </div>
+          <div>
+            <a href="signup.html" class="btn btn-primary">Create Your Account</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Lumière Gallery</h4>
+          <p>
+            An online home for timeless fine art. We archive, document, and present high-fidelity digital records of influential human masterpieces.
+          </p>
+          <p style="font-size: 0.8rem; color: #87837d;">Open Daily: 10:00 AM &ndash; 6:00 PM</p>
+        </div>
+
+        <div class="footer-column">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="artworks.html">Art Collection</a></li>
+            <li><a href="about.html">About & Visit</a></li>
+            <li><a href="login.html">Member Sign In</a></li>
+            <li><a href="signup.html">Create Account</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h5>Featured Works</h5>
+          <ul>
+            <li><a href="the-starry-night.html">The Starry Night</a></li>
+            <li><a href="mona-lisa.html">Mona Lisa</a></li>
+            <li><a href="the-scream.html">The Scream</a></li>
+            <li><a href="girl-with-pearl-earring.html">Girl with a Pearl Earring</a></li>
+            <li><a href="the-kiss.html">The Kiss</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h5>Gallery Gazette</h5>
+          <p style="font-size: 0.85rem; color: #a6a199; margin-bottom: 0.6rem;">
+            Subscribe to our weekly curator essays and private preview alerts.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" class="newsletter-input" required>
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lumière Fine Art Gallery. Curated by Joshua Antony. All public domain imagery sourced via Wikimedia Commons.</p>
+        <p>Built with Semantic HTML5, Custom CSS & Vanilla JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
