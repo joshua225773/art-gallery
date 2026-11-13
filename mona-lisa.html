@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mona Lisa (1503) - Leonardo da Vinci | Lumière Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-title">Lumière</span>
+        <span class="brand-tagline">Fine Art Gallery</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="artworks.html" class="nav-link active">Artworks & Exhibition</a>
+        <a href="about.html" class="nav-link">About & Visit</a>
+        <div class="nav-auth-group">
+          <a href="login.html" class="btn btn-outline btn-sm">Sign In</a>
+          <a href="signup.html" class="btn btn-primary btn-sm">Join Gallery</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- Breadcrumb Navigation -->
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>&rsaquo;</span>
+        <a href="artworks.html">Artworks</a>
+        <span>&rsaquo;</span>
+        <span style="color: var(--dark); font-weight: 600;">Mona Lisa</span>
+      </nav>
+
+      <!-- Primary Artwork Detail Layout -->
+      <section class="artwork-detail-section">
+        <div class="artwork-detail-grid">
+          
+          <!-- Visual Column: Picture in museum frame -->
+          <div class="artwork-visual-column">
+            <div class="museum-frame">
+              <div class="museum-frame-inner">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/1200px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" 
+                     alt="Mona Lisa by Leonardo da Vinci" 
+                     class="zoomable-image" 
+                     title="Click to examine full-resolution view">
+              </div>
+            </div>
+
+            <!-- Interactive Toolbar below image -->
+            <div class="artwork-toolbar">
+              <div class="action-btn-group">
+                <button type="button" id="likeArtworkBtn" class="icon-btn">
+                  &#9829; <span>Add to Favorites</span> (<strong id="likeCount">589</strong>)
+                </button>
+                <button type="button" class="icon-btn" onclick="document.querySelector('.zoomable-image').click()">
+                  &#128269; <span>Zoom In</span>
+                </button>
+              </div>
+              <span style="font-size: 0.78rem; color: var(--text-muted);">Musée du Louvre, Paris</span>
+            </div>
+          </div>
+
+          <!-- Information Column: Details & Description -->
+          <div class="artwork-info-column">
+            <span class="art-meta-tag">High Renaissance</span>
+            <h1 class="artwork-detail-title">Mona Lisa (La Gioconda)</h1>
+            <p class="artwork-detail-artist">By <strong>Leonardo da Vinci</strong> (Italian, 1452–1519)</p>
+            <p class="artwork-detail-year">Year of Creation: <strong>c. 1503&ndash;1519</strong></p>
+
+            <!-- Specifications Table -->
+            <table class="artwork-spec-table">
+              <tbody>
+                <tr>
+                  <th>Medium</th>
+                  <td>Oil on poplar panel</td>
+                </tr>
+                <tr>
+                  <th>Dimensions</th>
+                  <td>77 cm &times; 53 cm (30 in &times; 21 in)</td>
+                </tr>
+                <tr>
+                  <th>Current Collection</th>
+                  <td>Musée du Louvre, Salle des États, Paris, France</td>
+                </tr>
+                <tr>
+                  <th>Subject</th>
+                  <td>Lisa Gherardini, wife of Florentine cloth merchant Francesco del Giocondo</td>
+                </tr>
+                <tr>
+                  <th>Technique</th>
+                  <td>Sfumato (smoky blending without sharp outlines) & Aerial perspective</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Audio Commentary Simulation -->
+            <div class="audio-guide-card">
+              <div class="audio-guide-info">
+                <h4>Audio Curator Tour</h4>
+                <p id="audioGuideStatus">Narrated curatorial commentary (approx. 2 min)</p>
+              </div>
+              <button type="button" id="audioGuideBtn" class="btn btn-primary btn-sm">
+                Listen to Audio Commentary
+              </button>
+            </div>
+
+            <!-- Curatorial Short Description -->
+            <div class="artwork-description-box">
+              <h3>Curator's Description</h3>
+              <p>
+                Regarded as the most recognized and celebrated portrait in human history, the <em>Mona Lisa</em> exemplifies Leonardo da Vinci's consummate mastery of High Renaissance aesthetics. Commissioned in Florence around 1503, Leonardo carried the portrait with him across Italy and ultimately to France, continuing to refine its translucent glaze layers until his death in 1519.
+              </p>
+              <p>
+                The portrait is universally famed for the subject's subtle, elusive expression. Leonardo achieved this legendary optical ambiguity through <em>sfumato</em>, imperceptibly softening the transitions around the corners of Lisa's eyes and mouth so her expression appears to subtly shift depending upon where the viewer focuses their gaze.
+              </p>
+              <p>
+                Behind the sitter lies an imaginary, wild landscape of jagged mountains, winding rivers, and a distant stone bridge. Leonardo deployed atmospheric perspective—shifting tones toward muted blues as depth recedes—symbolically linking human harmony with the enduring organic forces of the natural world.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Similar Artworks in Same Category Section -->
+      <section class="similar-artworks-section">
+        <div class="section-header" style="text-align: left; margin-bottom: 1.5rem;">
+          <span class="section-tag">Related Collection</span>
+          <h2 class="section-title" style="font-size: 1.8rem;">Similar Artworks in the Renaissance</h2>
+          <p class="section-subtitle">Examine peer masterpieces celebrating Florentine humanism, balance, and classicism.</p>
+        </div>
+
+        <div class="similar-grid">
+          <!-- Similar Piece 1 -->
+          <article class="similar-card">
+            <div class="similar-card-img">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/1280px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg" 
+                   alt="The Birth of Venus by Sandro Botticelli" loading="lazy">
+            </div>
+            <div class="similar-card-content">
+              <h3 class="similar-card-title">The Birth of Venus</h3>
+              <p class="similar-card-artist">Sandro Botticelli</p>
+              <span class="similar-card-year">1485 &bull; Early Renaissance</span>
+              <p style="font-size: 0.83rem; color: #555; margin-bottom: 0.8rem;">
+                A luminous revival of Classical mythology celebrating divine love and beauty as Venus lands upon Tuscan shores.
+              </p>
+              <a href="artworks.html" class="similar-card-link">View in Collection &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Similar Piece 2 -->
+          <article class="similar-card">
+            <div class="similar-card-img">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/1280px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg" 
+                   alt="The School of Athens by Raphael" loading="lazy">
+            </div>
+            <div class="similar-card-content">
+              <h3 class="similar-card-title">The School of Athens</h3>
+              <p class="similar-card-artist">Raphael</p>
+              <span class="similar-card-year">1509&ndash;1511 &bull; High Renaissance</span>
+              <p style="font-size: 0.83rem; color: #555; margin-bottom: 0.8rem;">
+                Raphael's monumental Vatican fresco celebrating philosophy, bringing Plato and Aristotle together in architectural harmony.
+              </p>
+              <a href="artworks.html" class="similar-card-link">View in Collection &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Similar Piece 3 -->
+          <article class="similar-card">
+            <div class="similar-card-img">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Lady_with_an_Ermine_-_Leonardo_da_Vinci_-_Google_Art_Project.jpg/1200px-Lady_with_an_Ermine_-_Leonardo_da_Vinci_-_Google_Art_Project.jpg" 
+                   alt="Lady with an Ermine by Leonardo da Vinci" loading="lazy">
+            </div>
+            <div class="similar-card-content">
+              <h3 class="similar-card-title">Lady with an Ermine</h3>
+              <p class="similar-card-artist">Leonardo da Vinci</p>
+              <span class="similar-card-year">1489&ndash;1490 &bull; High Renaissance</span>
+              <p style="font-size: 0.83rem; color: #555; margin-bottom: 0.8rem;">
+                Leonardo's dynamic psychological portrait of Cecilia Gallerani holding a white stoat, alive with twisting contrapposto motion.
+              </p>
+              <a href="artworks.html" class="similar-card-link">View in Collection &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Fullscreen Zoom Modal Viewer -->
+  <div id="imageModal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Image Zoom View">
+    <div class="modal-content">
+      <button type="button" id="modalCloseBtn" class="modal-close-btn" aria-label="Close image modal">&times;</button>
+      <img id="modalImageDisplay" src="" alt="Full view preview">
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Lumière Gallery</h4>
+          <p>
+            An online home for timeless fine art. We archive, document, and present high-fidelity digital records of influential human masterpieces.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="artworks.html">Art Collection</a></li>
+            <li><a href="about.html">About & Visit</a></li>
+            <li><a href="login.html">Sign In</a></li>
+            <li><a href="signup.html">Register</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h5>Exhibition Rooms</h5>
+          <ul>
+            <li><a href="the-starry-night.html">The Starry Night</a></li>
+            <li><a href="mona-lisa.html">Mona Lisa</a></li>
+            <li><a href="the-scream.html">The Scream</a></li>
+            <li><a href="girl-with-pearl-earring.html">Girl with a Pearl Earring</a></li>
+            <li><a href="the-kiss.html">The Kiss</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h5>Curatorial Credits</h5>
+          <p style="font-size: 0.85rem; color: #a6a199;">
+            Permanent collection of the French Republic, acquired by King Francis I in 1518. Sourced from public domain archives.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lumière Fine Art Gallery. Curated by Joshua Antony.</p>
+        <p>Built with Semantic HTML5, Custom CSS & Vanilla JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
