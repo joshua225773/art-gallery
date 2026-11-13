@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Display & Exhibition | Lumière Fine Art Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-title">Lumière</span>
+        <span class="brand-tagline">Fine Art Gallery</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="artworks.html" class="nav-link active">Artworks & Exhibition</a>
+        <a href="about.html" class="nav-link">About & Visit</a>
+        <div class="nav-auth-group">
+          <a href="login.html" class="btn btn-outline btn-sm">Sign In</a>
+          <a href="signup.html" class="btn btn-primary btn-sm">Join Gallery</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Gallery Header Section -->
+    <section class="section" style="padding-bottom: 2rem;">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">Permanent Collection</span>
+          <h1 class="section-title">The Masterpiece Pavilion</h1>
+          <p class="section-subtitle">
+            Browse through our curated exhibition of iconic historical paintings. Select any piece to view complete high-definition imagery, historical notes, and category counterparts.
+          </p>
+        </div>
+
+        <!-- Filter & Search Toolbar -->
+        <div class="gallery-filter-bar">
+          <div class="filter-buttons">
+            <button type="button" class="filter-btn active" data-filter="all">All Movements</button>
+            <button type="button" class="filter-btn" data-filter="impressionism">Post-Impressionism</button>
+            <button type="button" class="filter-btn" data-filter="renaissance">Renaissance</button>
+            <button type="button" class="filter-btn" data-filter="dutch">Dutch Golden Age</button>
+            <button type="button" class="filter-btn" data-filter="expressionism">Expressionism</button>
+            <button type="button" class="filter-btn" data-filter="symbolism">Symbolism / Art Nouveau</button>
+          </div>
+
+          <div class="search-box">
+            <span class="search-icon">&#128269;</span>
+            <input type="text" id="artSearchInput" placeholder="Search title, artist, year...">
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+          <span id="artworkCount" style="font-size: 0.88rem; color: var(--text-muted); font-weight: 500;">
+            Showing 9 masterpieces
+          </span>
+          <span style="font-size: 0.82rem; color: var(--primary); font-weight: 600;">
+            &bull; High-Definition Digitization
+          </span>
+        </div>
+
+        <!-- No Results Fallback -->
+        <div id="noResultsMessage" style="display: none; text-align: center; padding: 4rem 1rem;">
+          <h3 style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--dark); margin-bottom: 0.5rem;">No matching artworks found</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Try searching for a different artist, period, or clear your search query.</p>
+        </div>
+
+        <!-- Masterpiece Cards Grid -->
+        <div class="art-grid">
+
+          <!-- 1. The Starry Night -->
+          <article class="art-card" data-category="impressionism">
+            <div class="art-card-thumb">
+              <span class="art-badge">Post-Impressionism</span>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" 
+                   alt="The Starry Night by Vincent van Gogh" loading="lazy">
+            </div>
+            <div class="art-card-body">
+              <span class="art-card-year">1889 &bull; Saint-Rémy-de-Provence</span>
+              <h2 class="art-card-title">The Starry Night</h2>
+              <p class="art-card-artist">Vincent van Gogh</p>
+              <p class="art-card-desc">
+                An expressive masterpiece depicting a nocturnal sky swirling with celestial rhythms over the silent village of Saint-Rémy and reaching cypress trees.
+              </p>
+              <div class="art-card-footer">
+                <a href="the-starry-night.html" class="art-link-btn">View Artwork Details &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Mona Lisa -->
+          <article class="art-card" data-category="renaissance">
+            <div class="art-card-thumb">
+              <span class="art-badge">High Renaissance</span>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/1200px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" 
+                   alt="Mona Lisa by Leonardo da Vinci" loading="lazy">
+            </div>
+            <div class="art-card-body">
+              <span class="art-card-year">1503&ndash;1519 &bull; Florence / Amboise</span>
+              <h2 class="art-card-title">Mona Lisa</h2>
+              <p class="art-card-artist">Leonardo da Vinci</p>
+              <p class="art-card-desc">
+                The pinnacle of Italian Renaissance portraiture, celebrated for Lisa Gherardini's psychological presence, optical illusion, and Leonardo's delicate sfumato.
+              </p>
+              <div class="art-card-footer">
+                <a href="mona-lisa.html" class="art-link-btn">View Artwork Details &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. The Scream -->
+          <article class="art-card" data-category="expressionism">
+            <div class="art-card-thumb">
+              <span class="art-badge">Expressionism</span>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/1200px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg" 
+                   alt="The Scream by Edvard Munch" loading="lazy">
+            </div>
+            <div class="art-card-body">
+              <span class="art-card-year">1893 &bull; Kristiania (Oslo)</span>
+              <h2 class="art-card-title">The Scream</h2>
+              <p class="art-card-artist">Edvard Munch</p>
+              <p class="art-card-desc">
+                A monumental expressionist landmark crystallizing modern anxiety through an agonizing figure shrieking under an incandescent fiery sunset.
+              </p>
+              <div class="art-card-footer">
+                <a href="the-scream.html" class="art-link-btn">View Artwork Details &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Girl with a Pearl Earring -->
+          <article class="art-card" data-category="dutch">
+            <div class="art-card-thumb">
+              <span class="art-badge">Dutch Golden Age</span>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/1200px-1665_Girl_with_a_Pearl_Earring.jpg" 
+                   alt="Girl with a Pearl Earring by Johannes Vermeer" loading="lazy">
+            </div>
+            <div class="art-card-body">
+              <span class="art-card-year">1665 &bull; Delft, Netherlands</span>
+              <h2 class="art-card-title">Girl with a Pearl Earring</h2>
+              <p class="art-card-artist">Johannes Vermeer</p>
+              <p class="art-card-desc">
+                Vermeer's sublime tronie portraying a young maiden with an oriental turban and a reflective pearl earring against an atmospheric dark ground.
+              </p>
+              <div class="art-card-footer">
+                <a href="girl-with-pearl-earring.html" class="art-link-btn">View Artwork Details &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. The Kiss -->
+          <article class="art-card" data-category="symbolism">
+            <div class="art-card-thumb">
+              <span class="art-badge">Symbolism / Art Nouveau</span>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg/1200px-The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg" 
+                   alt="The Kiss by Gustav Klimt" loading="lazy">
+            </div>
+            <div class="art-card-body">
+              <span class="art-card-year">1907&ndash;1908 &bull; Vienna, Austria</span>
+              <h2 class="art-card-title">The Kiss</h2>
+              <p class="art-card-artist">Gustav Klimt</p>
+              <p class="art-card-desc">
+                The apex of Klimt's Golden Phase, uniting romantic devotion, Byzantine mosaic gilding, and lush organic patterns at the edge of a floral cliff.
+              </p>
+              <div class="art-card-footer">
+                <a href="the-kiss.html" class="art-link-btn">View Artwork Details &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. The Birth of Venus -->
+          <article class="art-card" data-category="renaissance">
+            <div class="art-card-thumb">
+              <span class="art-badge">Early Renaissance</span>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/1280px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg" 
+                   alt="The Birth of Venus by Sandro Botticelli" loading="lazy">
+            </div>
+            <div class="art-card-body">
+              <span class="art-card-year">1485 &bull; Florence, Italy</span>
+              <h2 class="art-card-title">The Birth of Venus</h2>
+              <p class="art-card-artist">Sandro Botticelli</p>
+              <p class="art-card-desc">
+                An ethereal Florentine mythological masterpiece depicting the goddess Venus emerging from the sea foam blown by Zephyr toward the shore.
+              </p>
+              <div class="art-card-footer">
+                <a href="mona-lisa.html" class="art-link-btn">Explore Renaissance Hall &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. The Night Watch -->
+          <article class="art-card" data-category="dutch">
+            <div class="art-card-thumb">
+              <span class="art-badge">Dutch Golden Age</span>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/The_Night_Watch_-_HD.jpg/1280px-The_Night_Watch_-_HD.jpg" 
+                   alt="The Night Watch by Rembrandt van Rijn" loading="lazy">
+            </div>
+            <div class="art-card-body">
+              <span class="art-card-year">1642 &bull; Amsterdam, Netherlands</span>
+              <h2 class="art-card-title">The Night Watch</h2>
+              <p class="art-card-artist">Rembrandt van Rijn</p>
+              <p class="art-card-desc">
+                Rembrandt's revolutionary civic guard group portrait, groundbreaking in its dramatic chiaroscuro illumination and dynamic cinematic movement.
+              </p>
+              <div class="art-card-footer">
+                <a href="girl-with-pearl-earring.html" class="art-link-btn">Explore Dutch Hall &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. Sunflowers -->
+          <article class="art-card" data-category="impressionism">
+            <div class="art-card-thumb">
+              <span class="art-badge">Post-Impressionism</span>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vincent_Willem_van_Gogh_127.jpg/1200px-Vincent_Willem_van_Gogh_127.jpg" 
+                   alt="Sunflowers by Vincent van Gogh" loading="lazy">
+            </div>
+            <div class="art-card-body">
+              <span class="art-card-year">1888 &bull; Arles, France</span>
+              <h2 class="art-card-title">Sunflowers</h2>
+              <p class="art-card-artist">Vincent van Gogh</p>
+              <p class="art-card-desc">
+                Van Gogh's radiant study in yellow hues, created to decorate Paul Gauguin's guest room in the Yellow House at Arles, full of vitality and warmth.
+              </p>
+              <div class="art-card-footer">
+                <a href="the-starry-night.html" class="art-link-btn">Explore Van Gogh Hall &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. Portrait of Adele Bloch-Bauer I -->
+          <article class="art-card" data-category="symbolism">
+            <div class="art-card-thumb">
+              <span class="art-badge">Symbolism / Art Nouveau</span>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Gustav_Klimt_046.jpg/1200px-Gustav_Klimt_046.jpg" 
+                   alt="Portrait of Adele Bloch-Bauer I by Gustav Klimt" loading="lazy">
+            </div>
+            <div class="art-card-body">
+              <span class="art-card-year">1907 &bull; Vienna, Austria</span>
+              <h2 class="art-card-title">Adele Bloch-Bauer I</h2>
+              <p class="art-card-artist">Gustav Klimt</p>
+              <p class="art-card-desc">
+                Also known as 'The Woman in Gold', this dazzling composition merges intricate geometric symbolism and real gold leaf leafing.
+              </p>
+              <div class="art-card-footer">
+                <a href="the-kiss.html" class="art-link-btn">Explore Symbolism Hall &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Lumière Gallery</h4>
+          <p>
+            An online home for timeless fine art. We archive, document, and present high-fidelity digital records of influential human masterpieces.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="artworks.html">Art Collection</a></li>
+            <li><a href="about.html">About & Visit</a></li>
+            <li><a href="login.html">Sign In</a></li>
+            <li><a href="signup.html">Register</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h5>Featured Works</h5>
+          <ul>
+            <li><a href="the-starry-night.html">The Starry Night</a></li>
+            <li><a href="mona-lisa.html">Mona Lisa</a></li>
+            <li><a href="the-scream.html">The Scream</a></li>
+            <li><a href="girl-with-pearl-earring.html">Girl with a Pearl Earring</a></li>
+            <li><a href="the-kiss.html">The Kiss</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h5>Visitor Inquiries</h5>
+          <p style="font-size: 0.85rem; color: #a6a199;">
+            Questions regarding exhibition provenance or curatorial loans? Contact our archive staff at <code>curator@lumieregallery.org</code>.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lumière Fine Art Gallery. Curated by Joshua Antony.</p>
+        <p>Built with Semantic HTML5, Custom CSS & Vanilla JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
