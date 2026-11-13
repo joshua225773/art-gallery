@@ -48,7 +48,7 @@ A curated, responsive web exhibition showcasing world-renowned historical painti
    - Edvard Munch (1893), Expressionism.
    - Specifications (National Gallery Oslo, tempera/pastel on cardboard, dimensions).
    - Historical background on Munch's diary entry and existential modern anxiety.
-   - 3 Similar Artworks in Expressionism: *The Old Guitarist*, *Street Berlin*, *Self-Portrait with Thorns*.
+   - 3 Similar Artworks in Expressionism: *Self-Portrait with Physalis* (Egon Schiele), *Street, Berlin* (Ernst Ludwig Kirchner), *Madonna* (Edvard Munch).
 
 8. **Individual Artwork 4: Girl with a Pearl Earring (`girl-with-pearl-earring.html`)**
    - Johannes Vermeer (1665), Dutch Golden Age.
